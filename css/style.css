@@ -1,0 +1,130 @@
+/***************************************
+* Tips!
+*
+* Remember there are two parts of a table - thead and tbody!
+*        This will be helpful to remember when making rounded corners.
+*
+* Classes that are in-line are helpful for formatting the parts you want.
+*        But what if you want to format something programmatically? Remember Psuedoclasses!
+*
+* Setting background images in CSS can be alittle tricky. Double-check the formatting!
+*        It works a litle differently than adding images in HTML
+*
+* Remember you want the footer to always be at the very bottom of the page.
+*        Remember the different kinds of positining. You also might want to look at the margins for the main section!
+*
+* Using web fonts requires two parts - one goes in the HTML and one goes in the CSS
+*
+* You can do it! (*•̀ᴗ•́*)و
+******************************************** */
+
+
+body{
+    /* make all text google font quicksand w/ sans-serif fallback*/
+    font-family:"Quicksand", sans-serif; 
+    background-image: url("../images/pidgeon-background.jpg");
+    background-color: #dddddd;
+    margin: 20px;
+  }
+  h1{
+    font-size: 2em;    
+    color: #c12258;
+    line-height: 1.5em;
+  }
+
+  p{
+    font-size: 18px;
+    padding-top: 15px;
+    border: 2px black;
+
+  }
+
+  tr, table{
+    border-top: 2px solid black;   
+    border-left: 2px solid black;   
+    border-right: 2px solid black;   
+  }
+
+  table tr:last-child{
+    border-bottom: none;
+  }
+  
+  table{
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+  }
+
+  table th.colhead:first-child {
+    border-top-left-radius: 10px;
+    border-collapse: separate;
+  }
+
+  table th.colhead:last-child {
+    border-top-right-radius: 10px;
+    border-collapse: separate;
+  }
+
+  table th.rowhead:first-child {
+    border-bottom-left-radius: 10px; 
+    border-collapse: separate;
+  }
+
+  table td:last-child {
+    border-bottom-right-radius: 10px;
+    border-collapse: separate;
+  }
+
+
+  tr:nth-child(even){
+    background-color: #dddddd;
+  }
+  
+  tr:hover{
+    background-color: #fab9cf;
+  }
+
+  th {
+    min-width: 150px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+  }
+
+  thead{
+    color: white;
+    text-align: center;
+    background-color: #7e0830;
+    text-transform: uppercase;
+  }
+
+  td{
+    text-align: center;
+    border-collapse: separate;
+    padding: 15px;
+    border-bottom: 2px solid black;
+  }
+
+  a{
+    font-size: 18px;
+    color: #c12258;
+    padding-top: 15px;
+    text-align: left;
+  }
+
+  a:focus{
+    border: 1px solid red;
+  }
+    
+  footer{
+    /* style the footer so it has a black background and white text */
+    text-align: center;
+    padding-bottom: 15px;
+    min-height: 60px;
+    color: white;
+    background-color: black;
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 10px;
+  }
